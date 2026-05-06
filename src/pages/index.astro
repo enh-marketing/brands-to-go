@@ -1,0 +1,412 @@
+---
+---
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Brands To Go — Coming Soon</title>
+  <meta name="description" content="Brands To Go — Your Brands. Your Prices. Coming soon to locations across the UAE." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <picture>
+      <source media="(max-width: 768px)" srcset="/hero-mobile.jpg" />
+      <img src="/hero-desktop.jpg" alt="Brands To Go — Your Brands. Your Prices." class="hero-img" />
+    </picture>
+    <a href="#locations" class="scroll-cue" aria-label="Scroll to locations">
+      <span class="scroll-label">Scroll</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- COMING SOON LOCATIONS -->
+  <section class="locations" id="locations">
+    <div class="locations-inner">
+
+      <div class="locations-header anim-fade" style="--delay: 0.1s">
+        <div class="pill">Coming Soon</div>
+        <h2>Find Us Near You</h2>
+        <p class="subtitle">We're opening at these exciting locations across the UAE</p>
+      </div>
+
+      <div class="locations-grid">
+        <div class="location-card anim-fade" style="--delay: 0.2s">
+          <div class="pin-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Al Reem</h3>
+          <span class="city">Abu Dhabi</span>
+        </div>
+
+        <div class="location-card anim-fade" style="--delay: 0.35s">
+          <div class="pin-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Al Wada</h3>
+          <span class="city">Abu Dhabi</span>
+        </div>
+
+        <div class="location-card anim-fade" style="--delay: 0.5s">
+          <div class="pin-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Silicon Oasis</h3>
+          <span class="city">Dubai</span>
+        </div>
+
+        <div class="location-card anim-fade" style="--delay: 0.65s">
+          <div class="pin-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Manar Mall</h3>
+          <span class="city">Ras Al Khaimah</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer anim-fade" style="--delay: 0.8s">
+    <p>&copy; 2026 Brands To Go. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+<style>
+  /* ─── RESET & VARIABLES ─── */
+  :root {
+    --red: #E31837;
+    --red-deep: #B8102B;
+    --red-light: #FF2E4D;
+    --mild-red: #C04050;
+    --cream: #FFF8F5;
+    --charcoal: #1A1A1A;
+    --warm-gray: #6B6262;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    animation: heroReveal 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
+  @keyframes heroReveal {
+    from {
+      transform: scale(1.08);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* ─── SCROLL CUE ─── */
+  .scroll-cue {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    animation: cueFade 0.8s ease-out 1.4s forwards, cueBounce 2.2s ease-in-out 2.2s infinite;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .scroll-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  .scroll-cue svg {
+    display: block;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+  }
+
+  @keyframes cueFade {
+    to { opacity: 1; }
+  }
+
+  @keyframes cueBounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, 8px); }
+  }
+
+  /* ─── LOCATIONS SECTION ─── */
+  .locations {
+    position: relative;
+    background: var(--cream);
+    padding: 5rem 1.5rem 4rem;
+  }
+
+  .locations::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--red), var(--red-light), var(--red));
+  }
+
+  .locations-inner {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .locations-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .pill {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.5rem 1.6rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  .locations-header h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--charcoal);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--warm-gray);
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* ─── LOCATION CARDS ─── */
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .location-card {
+    background: #fff;
+    border: 1px solid rgba(227, 24, 55, 0.08);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.35s ease,
+                border-color 0.35s ease;
+  }
+
+  .location-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(227, 24, 55, 0.1);
+    border-color: rgba(227, 24, 55, 0.2);
+  }
+
+  .pin-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(227, 24, 55, 0.06);
+    color: var(--red);
+    margin-bottom: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .location-card:hover .pin-icon {
+    background: var(--red);
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  .location-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--charcoal);
+    margin-bottom: 0.3rem;
+  }
+
+  .city {
+    font-size: 0.9rem;
+    color: var(--warm-gray);
+    font-weight: 500;
+  }
+
+  /* ─── FOOTER ─── */
+  .footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: var(--red);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+  }
+
+  /* ─── ENTRY ANIMATIONS ─── */
+  .anim-fade {
+    opacity: 0;
+    transform: translateY(28px);
+    animation: fadeSlideUp 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: var(--delay, 0s);
+  }
+
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 768px) {
+    .locations {
+      padding: 3rem 1.25rem 2.5rem;
+    }
+
+    .locations-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .locations-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .location-card {
+      padding: 1.5rem 1.25rem;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      gap: 1rem;
+    }
+
+    .pin-icon {
+      margin-bottom: 0;
+      flex-shrink: 0;
+      width: 46px;
+      height: 46px;
+    }
+
+    .location-card h3 {
+      font-size: 1.05rem;
+    }
+
+    .scroll-cue {
+      bottom: 1.25rem;
+    }
+
+    .scroll-label {
+      font-size: 0.65rem;
+    }
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('anim-fade');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  document.querySelectorAll('.locations .anim-fade').forEach((el) => {
+    el.classList.remove('anim-fade');
+    el.setAttribute('data-animate', '');
+    observer.observe(el);
+  });
+
+  document.querySelectorAll('[data-animate]').forEach((el) => {
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add('anim-fade');
+          obs.unobserve(el);
+        }
+      },
+      { threshold: 0.15 }
+    );
+    obs.observe(el);
+  });
+</script>
+</html>
