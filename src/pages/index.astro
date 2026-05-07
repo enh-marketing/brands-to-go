@@ -38,7 +38,7 @@
       </div>
 
       <div class="locations-grid">
-        <div class="location-card is-opening anim-fade" style="--delay: 0.2s">
+        <a href="https://maps.app.goo.gl/Fu3XQiQm7wkMooNP7" target="_blank" rel="noopener noreferrer" class="location-card location-card--link is-opening anim-fade" style="--delay: 0.2s" aria-label="Al Jerf, Ajman — open in Google Maps">
           <span class="badge badge-opening">Opening Soon</span>
           <div class="pin-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -48,7 +48,14 @@
           </div>
           <h3>Al Jerf</h3>
           <span class="city">Ajman</span>
-        </div>
+          <span class="map-cue">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 17 17 7"/>
+              <path d="M7 7h10v10"/>
+            </svg>
+            View on Maps
+          </span>
+        </a>
 
         <div class="location-card anim-fade" style="--delay: 0.35s">
           <span class="badge badge-coming">Coming Soon</span>
@@ -311,6 +318,39 @@
     box-shadow: 0 6px 24px rgba(227, 24, 55, 0.08);
   }
 
+  /* Anchor variant — keep card visuals identical to div cards */
+  a.location-card--link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .location-card--link:hover {
+    border-color: rgba(227, 24, 55, 0.5);
+    box-shadow: 0 16px 48px rgba(227, 24, 55, 0.16);
+  }
+
+  .map-cue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.32rem;
+    margin-top: 0.7rem;
+    color: var(--red);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: gap 0.25s ease;
+  }
+
+  .location-card--link:hover .map-cue {
+    gap: 0.5rem;
+  }
+
+  .map-cue svg {
+    flex-shrink: 0;
+  }
+
   /* ─── BADGES ─── */
   .badge {
     position: absolute;
@@ -465,6 +505,18 @@
     .badge-coming {
       font-size: 0.46rem;
       padding: 0.22rem 0.5rem;
+    }
+
+    /* Map cue: drop to its own line below the title/city on mobile */
+    .location-card {
+      flex-wrap: wrap;
+    }
+
+    .map-cue {
+      flex-basis: 100%;
+      margin-left: calc(46px + 1rem); /* align past the pin icon + gap */
+      margin-top: 0.4rem;
+      font-size: 0.65rem;
     }
 
     .scroll-cue {
